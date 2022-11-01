@@ -377,6 +377,17 @@ header .navbar ul li a:hover{
 }
 
 
+#tcs{
+    color:blue;
+    font-weight: 15000; 
+    font-size: 20px;
+}
+#tcs:hover{
+    color:purple;
+}
+
+
+
 
 /* media queries  */
 
