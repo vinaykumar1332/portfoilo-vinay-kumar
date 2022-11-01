@@ -386,6 +386,66 @@ header .navbar ul li a:hover{
     color:purple;
 }
 
+/*social media icons*/
+/*social media icons*/
+.sicons{
+    align-items: center;
+    background-color: transparent;
+    display: block;
+    
+}
+#facbook:hover{
+    animation: tilt-shaking1 0.25s infinite;
+    color:blue;
+}
+@keyframes tilt-shaking1 {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+ 
+#inst:hover{
+    animation: tilt-shaking1 0.25s infinite;
+    color:blue;
+}
+
+#link:hover{
+    animation: tilt-shaking1 0.25s infinite;
+    color: blue;
+}
+
+#twit:hover{
+    animation: tilt-shaking1 0.25s infinite;
+    color:blue;
+}
+
+@keyframes tilt-shaking1 {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+.fa {
+    padding: 20px;
+    color:purple;
+    margin-left: 30px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+ #txt-icon{
+    color:purple;
+    font-size:xx-large;
+    font-weight:bolder;
+    
+ } 
+
 
 
 
