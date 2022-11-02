@@ -49,7 +49,7 @@ section{
 
 .btn{
     padding:.7rem 3rem;
-    background:#333;
+    background:purple;
     color:#fff;
     cursor: pointer;
     margin-top: 1rem;
@@ -60,10 +60,11 @@ section{
 .btn i{
     padding:0 .5rem;
     font-size: 1.8rem;
+    background-color: transparent;
 }
 
 .btn:hover{
-    background:var(--yellow);
+    background:blue;
 }
 
 .heading{
@@ -75,18 +76,14 @@ section{
     color:#fff;
 }
 
-.heading span{
-    color:var(--yellow);
-}
-
 header{
-    position: fixed;
+    position: relative;
     top:0; left:0;
     z-index: 1000;
     height:100%;
     width:35rem;
-    background:#1a1a1a;
-    display: flex;
+    background:transparent;
+    display: grid;
     align-items: center;
     justify-content: center;
     flex-flow: column;
@@ -375,7 +372,18 @@ header .navbar ul li a:hover{
     color: white;
     
 }
-
+/*----img animation----*/
+#img{
+    align-items: center;
+    position: relative;
+    animation: mypic 3s  reverse ;
+    animation-timing-function:linear;
+    animation-delay: 100ms;
+}
+@keyframes mypic {
+    from {bottom:0px;}
+    to {bottom:300px;}
+  }
 
 #tcs{
     color:blue;
@@ -386,7 +394,37 @@ header .navbar ul li a:hover{
     color:purple;
 }
 
-/*social media icons*/
+/*---text-animartion----*/
+#name-animi{
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 5s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+      -webkit-filter: hue-rotate(-360deg);
+    }
+  }
+
+/*---hi there txt animation--*/
+#col2{
+    
+    position: relative;
+    animation: hi 3s  reverse ;
+    animation-timing-function:linear;
+    animation-delay: 100ms;
+}
+@keyframes hi {
+    from {left:0px;}
+    to {left:300px;}
+  }
+
+
 /*social media icons*/
 .sicons{
     align-items: center;
@@ -429,6 +467,12 @@ header .navbar ul li a:hover{
     100% { transform: rotate(0deg); }
   }
   
+  
+
+
+
+
+
 .fa {
     padding: 20px;
     color:purple;
@@ -445,6 +489,15 @@ header .navbar ul li a:hover{
     font-weight:bolder;
     
  } 
+
+
+
+
+
+
+
+
+
 
 
 
