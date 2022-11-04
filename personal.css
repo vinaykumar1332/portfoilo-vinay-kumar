@@ -428,18 +428,16 @@ header .navbar ul li a:hover{
 
 
 /*social media icons*/
-.shake{
+.sicons{
     align-items: center;
     background-color: transparent;
     display: block;
     justify-content: center;
     position: relative;
-    margin: auto;
- 
     
 }
-#facbook{
-    animation: tilt-shaking1 0.3s infinite;
+#facbook:hover{
+    animation: tilt-shaking1 0.25s infinite;
     color:blue;
 }
 @keyframes tilt-shaking1 {
@@ -450,17 +448,17 @@ header .navbar ul li a:hover{
     100% { transform: rotate(0deg); }
   }
  
-#inst{
+#inst:hover{
     animation: tilt-shaking1 0.25s infinite;
     color:blue;
 }
 
-#link{
+#link:hover{
     animation: tilt-shaking1 0.25s infinite;
     color: blue;
 }
 
-#twit{
+#twit:hover{
     animation: tilt-shaking1 0.25s infinite;
     color:blue;
 }
