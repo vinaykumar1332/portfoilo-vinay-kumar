@@ -411,6 +411,8 @@ header .navbar ul li a:hover{
     }
   }
 
+
+
 /*---hi there txt animation--*/
 #col2{
     
@@ -426,14 +428,18 @@ header .navbar ul li a:hover{
 
 
 /*social media icons*/
-.sicons{
+.shake{
     align-items: center;
     background-color: transparent;
     display: block;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+ 
     
 }
-#facbook:hover{
-    animation: tilt-shaking1 0.25s infinite;
+#facbook{
+    animation: tilt-shaking1 0.3s infinite;
     color:blue;
 }
 @keyframes tilt-shaking1 {
@@ -444,17 +450,17 @@ header .navbar ul li a:hover{
     100% { transform: rotate(0deg); }
   }
  
-#inst:hover{
+#inst{
     animation: tilt-shaking1 0.25s infinite;
     color:blue;
 }
 
-#link:hover{
+#link{
     animation: tilt-shaking1 0.25s infinite;
     color: blue;
 }
 
-#twit:hover{
+#twit{
     animation: tilt-shaking1 0.25s infinite;
     color:blue;
 }
@@ -468,11 +474,6 @@ header .navbar ul li a:hover{
   }
   
   
-
-
-
-
-
 .fa {
     padding: 20px;
     color:purple;
@@ -487,17 +488,10 @@ header .navbar ul li a:hover{
     color:purple;
     font-size:xx-large;
     font-weight:bolder;
+    text-align: center;
+    justify-content: center;
     
- } 
-
-
-
-
-
-
-
-
-
+ }
 
 
 
