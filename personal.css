@@ -36,8 +36,10 @@ html::-webkit-scrollbar-thumb{
     background:var(--yellow);
 }
 
+
+
 body{
-    background:#111;
+    background-color: rgb(2, 2, 2);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -49,7 +51,7 @@ section{
 
 .btn{
     padding:.7rem 3rem;
-    background:purple;
+    background:#800080;
     color:#fff;
     cursor: pointer;
     margin-top: 1rem;
@@ -274,6 +276,15 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
+#edu-btn{
+    margin-left: 35%;
+    justify-content: center;
+}
+#cont-btn {
+    margin-left: 35%;
+    justify-content: center;
+}
+
 .portfolio .box-container{
     display: flex;
     align-items: center;
@@ -391,7 +402,7 @@ header .navbar ul li a:hover{
     font-size: 20px;
 }
 #tcs:hover{
-    color:purple;
+    color:#800080;
 }
 
 /*---text-animartion----*/
@@ -410,6 +421,62 @@ header .navbar ul li a:hover{
       -webkit-filter: hue-rotate(-360deg);
     }
   }
+
+
+  /*----hamberger---*/
+       
+  .mobile-container {
+    max-width: auto;
+    margin: auto;
+    background-color:transparent;
+    height: auto;
+  }
+  
+  .topnav {
+    overflow:visible;
+    background-color:#800080;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color:white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+   
+    color:transparent;
+  }
+  
+  .active {
+    background-color: rgb(2, 2, 2);
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -432,8 +499,8 @@ header .navbar ul li a:hover{
     align-items: center;
     background-color: transparent;
     display: block;
-    justify-content: center;
-    position: relative;
+    margin-left:20px;
+    
     
 }
 #facbook:hover{
@@ -442,24 +509,24 @@ header .navbar ul li a:hover{
 }
 @keyframes tilt-shaking1 {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(10deg); }
+    25% { transform: rotate(20deg); }
     50% { transform: rotate(0eg); }
-    75% { transform: rotate(-10deg); }
+    75% { transform: rotate(-20deg); }
     100% { transform: rotate(0deg); }
   }
  
 #inst:hover{
-    animation: tilt-shaking1 0.25s infinite;
+    animation: tilt-shaking1 0.3s infinite;
     color:blue;
 }
 
 #link:hover{
-    animation: tilt-shaking1 0.25s infinite;
+    animation: tilt-shaking1 0.3s infinite;
     color: blue;
 }
 
 #twit:hover{
-    animation: tilt-shaking1 0.25s infinite;
+    animation: tilt-shaking1 0.3s infinite;
     color:blue;
 }
 
@@ -474,7 +541,7 @@ header .navbar ul li a:hover{
   
 .fa {
     padding: 20px;
-    color:purple;
+    color:#800080;
     margin-left: 30px;
     font-size: 30px;
     width: 10px;
@@ -483,7 +550,7 @@ header .navbar ul li a:hover{
   }
 
  #txt-icon{
-    color:purple;
+    color:#800080;
     font-size:xx-large;
     font-weight:bolder;
     text-align: center;
@@ -561,5 +628,12 @@ header .navbar ul li a:hover{
     .contact .row form{
         margin:3rem 0;
     }
+}
+.content {display:none;}
+.preload { width:100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;}
 
- }
+/*scroll-top*/
