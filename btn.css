@@ -1,0 +1,43 @@
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#800080;
+    color: rgb(9, 9, 9);
+    font-weight:solid;
+    cursor: pointer;
+    padding: 5px 10px ;
+    border-radius: 10px;
+    
+  }
+  
+  #myBtn:hover {
+    background-color: #cb0ac2;
+    
+  }
+  @keyframes glowing {
+    0% {
+      background-color: #452c63;
+      box-shadow: 0 0 5px #e903f1;
+    }
+    50% {
+      background-color: #800080;
+      box-shadow: 0 0 20px #800080;
+    }
+    100% {
+      background-color: #800080;
+      box-shadow: 0 0 5px #800080;
+    }
+  }
+  #myBtn {
+    animation: glowing 1300ms infinite;
+  }
+
+
+ 
