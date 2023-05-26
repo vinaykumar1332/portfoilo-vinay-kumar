@@ -2,63 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinay kumar</title>
-
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
     <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" >
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--css file link  -->
     <link rel="stylesheet" href="personal.css">
     <link rel="stylesheet" href="btn.css">
-
-    <div id="pre-loader"></div>
-    
 </head>
-
 <body>
-   
-  
-   
-<div class="scroll-container"> 
-
-
+<div>
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">Home</a>
+      <a href="#">Test1</a>
+      <a href="#">Test2</a>
+      <a href="#">Test3</a>
+    </div>
+  </div>
+  <span style="font-size:35px;cursor:pointer;color: whitesmoke;padding: 9px;" onclick="openNav()">&#9776; </span>
+</div>
+<div>
+</div>
 <!-- home section starts  -->
 <section class="home" id="home">
-     <div class="user1">
-        <img id="img" height="50%" width="30%" src="11zon_cropped.png" alt="" onContextMenu="return false;" >     
-    </div>
-  
-    <h3 id="col2">HI THERE !</h3>
+      <h3 id="col2">HI THERE !</h3>
     <h1>I'M <span id="name-animi">vinay kumar Pudi</span></h1>
     <p id="typewriter">I am web developer with vast konwledge in many different front-end and back-end technologies, My objective is simply to be the best web developer and i am  contributing my skills to the  industry all that I know and can do. 
         I am currently working in <strong></strong> <a id="tcs" href="https://www.tcs.com" target="_blank" >TCS</a></strong></p>
        <br>
-    
     <a href="#about"><button class="btn">About me <i class="fas fa-user"></i></button></a>
-
 </section>
-
-
-
 <!-- about section starts  -->
-
 <section class="about" id="about">
-   
-
 <h1 class="heading"> <span>about</span> me </h1>
-
 <div class="row">
-
     <div class="info">
         <h3> <span> name : </span> vinay kumar pudi</h3>
         <h3> <span> age : </span> 25 </h3>
@@ -67,55 +54,40 @@
         <h3> <span> Programing language  : </span> HTML, CSS, JAVASCRIPT, JAVA, SQL, REACT JS</h3>
         <h3><span>Additional skills :</span>Git and Github.</h3>
         <div>
-            <a href="resume.pdf" target="_blank"><button class="D-btn" ><span>Downlaod CV </span></button></a>
-            
+            <a href="resume.pdf" target="_blank"><button class="D-btn" ><span>Downlaod CV </span></button></a>       
     </div>
     </div>
-
     <div class="counter">
-
-        <div class="box">
-            <span>1.1+</span>
+     <div class="box">
+            <span>1.4+</span>
             <h3>years of experience in TCS</h3>
         </div>
-
         <div class="box">
             <span>2+</span>
             <h3>project completed</h3>
         </div>
    </div>
-
 </div>
 <a href="#education"><button id="edu-btn" class="btn">Education <i class="fas fa-graduation-cap"> </i></button></a>
 </section>
-
 <!-- about section ends -->
-
 <!-- education section starts  -->
-
 <section class="education" id="education">
-
 <h1 class="heading"> my <span>education</span> </h1>
-
 <div class="box-container">
-
-    <div class="box">
+<div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2014</span>
         <h3>SSC /
             VIGNAN EM MEDIUM 
                    HIGH SCHOOL with 72%
         </h3>
-        
-    </div>
-
-    <div class="box">
+        </div>
+        <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2014-2016</span>
-        <h3>Intermediate / VIKAS JUNIOR COLLEGE with 85%</h3>
-        
+        <h3>Intermediate / VIKAS JUNIOR COLLEGE with 85%</h3>    
     </div>
-
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2016-2020</span>
@@ -125,40 +97,29 @@
             ENGINEERING, 
             PRAKASRAOPALLEM with 70%
             </h3>
-    </div>
+          </div>
 </div>
 <a href="#contact"><button id="cont-btn" class="btn">Contact <i class="glyphicon glyphicon-envelope"></i></button></a>
 </section>
-
 <section class="contact" id="contact">
-
 <h1 class="heading"> <span>contact</span> me </h1>
-
 <div class="row">
-
     <div class="content">
-
         <h3 class="title">contact info</h3>
-
         <div class="info">
             <h3> <i class="fas fa-envelope"></i><a id="mail" href="mailto:vinaykumar1332@gmail.com">vinaykumar1332@gmail.com</a></h3>
             <h3> <i class="fas fa-phone"></i>951-50XX-XXX</h3>
             <h3> <i class="fas fa-map-marker-alt"></i> samisradudem,west godhavei,Andhra pradesh,534301 </h3>
         </div>
-
-    </div>
-
+       </div>
     <form  action="mailto:vinaypudi1332@example.com" method="post" enctype="text/plain">
-
         <input type="text" placeholder="your name" class="box">
         <input type="email" placeholder=" your email" class="box">
         <textarea name="" id="" cols="30" rows="10" class="box message" placeholder=" your message"></textarea>
         <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
-
     </form>
-
 </div>
-<a href="#follow"><button id="cont-btn" class="btn">follow me <i class="glyphicon glyphicon-thumbs-up"></i></button></a>
+<a href="#follow"><button id="cont-btn" class="btn" id="text-1">follow me <i class="glyphicon glyphicon-thumbs-up"></i></button></a>
 </section>
 <footer>
 <section class="follow" id="follow">
@@ -172,17 +133,10 @@
 </section>
 <button onclick="topFunction()" id="myBtn" title="Go to top">▲</button>
 </footer>
-
-
 <!-- contact section ends -->
 <!---script files-->
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
-
-
-
-
 </div>
-
 </body>
 </html>
