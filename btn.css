@@ -1,106 +1,139 @@
 
 #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 26px;
-    border: none;
-    outline: none;
-    background-color:#800080;
-    color: rgb(9, 9, 9);
-    font-weight:solid;
-    cursor: pointer;
-    padding: 20px ;
-    border-radius: 19px;
-    
-  }
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 26px;
+  border: none;
+  outline: none;
+  background-color:#800080;
+  color: rgb(9, 9, 9);
+  font-weight:solid;
+  cursor: pointer;
+  padding: 20px ;
+  border-radius: 19px;
   
-  #myBtn:hover {
-    background-color: #cb0ac2;
-    
+}
+
+#myBtn:hover {
+  background-color: #cb0ac2;
+  
+}
+@keyframes glowing {
+  0% {
+    background-color: #452c63;
+    box-shadow: 0 0 5px #e903f1;
   }
-  @keyframes glowing {
-    0% {
-      background-color: #452c63;
-      box-shadow: 0 0 5px #e903f1;
-    }
-    50% {
-      background-color: #800080;
-      box-shadow: 0 0 20px #800080;
-    }
-    70%{
-      background-color: #800080;
-      box-shadow: 0 0 20px #800080;
-    }
-    100% {
-      background-color: #800080;
-      box-shadow: 0 0 5px #800080;
-    }
+  50% {
+    background-color: #800080;
+    box-shadow: 0 0 20px #800080;
   }
-  #myBtn {
-    animation: glowing 1300ms infinite;
+  70%{
+    background-color: #800080;
+    box-shadow: 0 0 20px #800080;
   }
+  100% {
+    background-color: #800080;
+    box-shadow: 0 0 5px #800080;
+  }
+}
+#myBtn {
+  animation: glowing 1300ms infinite;
+}
 
 
- /*  ------Nav------*/
- /* The Overlay (background) */
+/*  ------Nav------*/
+/* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 4px;
-  top: 0;
-  background-color:whitesmoke; /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.8s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+/* Height & width depends on how you want to reveal the overlay (see JS below) */   
+height: 100%;
+width: 0;
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 4px;
+top: 0;
+background-color:whitesmoke; /* Black fallback color */
+background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+overflow-x: hidden; /* Disable horizontal scroll */
+transition: 0.8s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+position: relative;
+top: 25%; /* 25% from the top */
+width: 100%; /* 100% width */
+text-align: center; /* Centered text/links */
+margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: white;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: white;
+display: block; /* Display block instead of inline */
+transition: 0.3s; /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
-  color:purple;
+color:purple;
 }
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
 }
 
 
-/*---loader----*/
+/*---pre-loader----*/
+body {
+overflow: hidden;
+}
+
+
+/* Preloader */
+
+#preloader {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color:white;
+/* change if the mask should have another color then white */
+z-index: 99;
+/* makes sure it stays on top */
+}
+
+#status {
+width: 200px;
+height: 200px;
+position: absolute;
+left: 50%;
+/* centers the loading animation horizontally one the screen */
+top: 50%;
+/* centers the loading animation vertically one the screen */
+background-image: url(loader.gif);
+/* path to your loading animation */
+background-repeat: no-repeat;
+background-position: center;
+margin: -100px 0 0 -100px;
+}
