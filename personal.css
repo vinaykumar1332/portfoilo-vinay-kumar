@@ -403,7 +403,6 @@ header .navbar ul li a:hover{
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: hue 5s infinite linear;
 }
-
 @-webkit-keyframes hue {
     from {
       -webkit-filter: hue-rotate(0deg);
