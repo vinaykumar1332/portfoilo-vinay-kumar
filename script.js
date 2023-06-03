@@ -15,10 +15,13 @@
 
 
 /*----loader---*/
-$(window).on('load', function() { // makes sure the whole site is loaded 
-  $('#status').delay(300).fadeOut('slow'); // will first fade out the loading animation 
-  $('#preloader').delay(800).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-  $('body').delay(1000).css({'overflow':'visible'});
-})
 
- 
+/*----loader---*/
+document.addEventListener("DOMContentLoaded", function(event) {
+  setTimeout(removePreloader, 3000); // Delay in milliseconds (3 seconds in this example)
+});
+
+function removePreloader() {
+  document.getElementById("preloader").style.display = "none";
+}
+
