@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 500px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 80px;
+    color: #800080;
+    margin: 0;
+    animation: shake 1s linear infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-20px);
+    }
+    40% {
+      transform: translateX(20px);
+    }
+    60% {
+      transform: translateX(-20px);
+    }
+    80% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  p {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .animated-circle {
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    animation: rotate 3s linear infinite;
+    position: relative;
+    overflow: hidden;
+    margin: 30px auto;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .small-circle {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce 2s linear infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translate(-50%, -50%);
+    }
+    50% {
+      transform: translate(-50%, -200%);
+    }
+  }
+
+  .animated-text {
+    animation: blink 1s linear infinite;
+    color: #fff;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .back-to-home {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    background-color: #800080;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-to-home:hover {
+    background-color: blue;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .animated-circle {
+      width: 150px;
+      height: 150px;
+      margin: 20px auto;
+    }
+
+    .small-circle {
+      width: 40px;
+      height: 40px;
+    }
+  }
