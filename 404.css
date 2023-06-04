@@ -18,7 +18,7 @@
     text-align: center;
   }
 
-  h1 {
+  h2 {
     font-size: 80px;
     color: #800080;
     margin: 0;
@@ -75,7 +75,7 @@
   .small-circle {
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: blue;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -86,15 +86,56 @@
 
   @keyframes bounce {
     0%, 100% {
-      transform: translate(-50%, -50%);
+      transform: translate(-75%, -100%);
     }
     50% {
-      transform: translate(-50%, -200%);
+      transform: translate(-125%, -200%);
+    }
+  }
+  .small-circle1 {
+    width: 50px;
+    height: 50px;
+    background-color:#800080;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce 5s linear infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translate(-100%, -200%);
+    }
+    50% {
+      transform: translate(-10%, -50%);
+    }
+    
+  }
+  .small-circle2 {
+    width: 50px;
+    height: 50px;
+    background-color:#353935;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    animation: bounce 10s linear infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translate(-10%, -100%);
+    }
+    50% {
+      transform: translate(-150%, -200%);
     }
   }
 
   .animated-text {
-    animation: blink 1s linear infinite;
+    animation: blink 20s linear infinite;
     color: #fff;
   }
 
@@ -146,4 +187,7 @@
       width: 40px;
       height: 40px;
     }
+  }
+  #loadtxt{
+    font-size:medium;
   }
