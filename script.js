@@ -12,6 +12,10 @@
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
+
+
+/*----loader---*/
+
 /*----loader---*/
 document.addEventListener("DOMContentLoaded", function(event) {
   setTimeout(removePreloader, 3000); // Delay in milliseconds (3 seconds in this example)
@@ -24,7 +28,7 @@ function removePreloader() {
 /*---Download button---*/
 document.getElementById("downloadButton").addEventListener("click", function() {
 });
-/*----scroll indicator----*/
+
 
 window.onscroll = function() {myFunction()};
 
@@ -34,7 +38,6 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
-
 /*---readmore----*/
 function myFunction() {
   var dots = document.getElementById("dots");
