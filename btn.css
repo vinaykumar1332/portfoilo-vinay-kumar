@@ -179,4 +179,20 @@ span.horizontal-shake {
   width: 100%;
 }
 
+/*---scroll indicator---*/
 
+
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background:#800080;
+  position: fixed;
+  z-index: 1;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 5px;
+  background:blue;
+  width: 0%;
+}
