@@ -135,8 +135,8 @@
   }
 
   .animated-text {
-    animation: blink 20s linear infinite;
-    color: #fff;
+   
+    color: whitesmoke;
   }
 
   @keyframes blink {
@@ -190,4 +190,19 @@
   }
   #loadtxt{
     font-size:medium;
+  }
+  #more {display: none;}
+  .rbtn{
+    background-color: #800080;
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  .rbtn:hover {
+    background-color: blue;
   }
