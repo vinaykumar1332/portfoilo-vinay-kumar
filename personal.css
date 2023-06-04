@@ -654,7 +654,7 @@ header .navbar ul li a:hover{
     border-radius: 30px;
     border: 1px solid;
     padding: 10px;
-    box-shadow: 2px 2px 2px 2px #888888;
+    box-shadow: 3px 3px 3px 3px #888888;
 }
 
 /*----scroll top ------*/

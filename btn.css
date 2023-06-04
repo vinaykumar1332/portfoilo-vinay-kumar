@@ -143,3 +143,40 @@ span.horizontal-shake {
   75% { transform: translateX(3px) }
   100% { transform: translateX(0) }
 }
+
+/*----download button for reumse----*/
+#downloadButton {
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  background-color:#800080 ;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 1s;
+}
+
+#downloadButton .buttonText {
+  z-index: 1;
+}
+
+#downloadButton .buttonAnimation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: width 0.3s;
+}
+
+#downloadButton:hover {
+  background-color: blue;
+  
+}
+
+#downloadButton:hover .buttonAnimation {
+  width: 100%;
+}
+
+

@@ -25,3 +25,6 @@ function removePreloader() {
   document.getElementById("preloader").style.display = "none";
 }
 
+/*---Download button---*/
+document.getElementById("downloadButton").addEventListener("click", function() {
+});
