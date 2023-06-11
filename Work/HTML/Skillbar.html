@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Work/HTML/CSS/Skillbar.css">
+    <link rel="stylesheet" href="/style2.css">
+</head>
+
+<body>
+    <div class="ham">
+        <div id="myNav" class="overlay" id="ham">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+           <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="/index.html">Home</a>
+              <a href="/Work/HTML/Skillbar.html">Skill bar</a>
+              <a href="404.html">Test2</a>
+              <a href="404.html">Test3</a>
+            </div>
+          </div>
+          <span style="font-size:35px;cursor:pointer;color: whitesmoke;padding: 9px;" onclick="openNav()">&#9776; </span>
+        </div>
+    </div>
+
+    <div>
+        <div id="preloader">
+            <div id="loader"></div>
+            <span class="horizontal-shake" id="txt-load">Loading</span>
+        </div>
+    </div>
+
+    <div class="container" class="box">
+        <div class="skill-box">
+            <span class="title">HTML</span>
+            <div class="skill-bar">
+                <span class="skill-per html">
+                    <span class="tooltip">90%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">CSS</span>
+            <div class="skill-bar">
+                <span class="skill-per css">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">JavaScript</span>
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+                    <span class="tooltip">50%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">JAVA</span>
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+                    <span class="tooltip">50%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">NodeJS</span>
+            <div class="skill-bar">
+                <span class="skill-per nodejs">
+                    <span class="tooltip">30%</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
