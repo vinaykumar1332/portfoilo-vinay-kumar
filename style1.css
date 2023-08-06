@@ -152,7 +152,7 @@ header .navbar ul li a:hover{
     display: inline-block;
     justify-content: center;
     flex-flow: column;
-    padding:0 15rem;
+    padding:0 6rem;
     margin-top: 25px;
 }
 
