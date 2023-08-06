@@ -39,11 +39,10 @@ html::-webkit-scrollbar-thumb{
 body{
     background-color: rgb(2, 2, 2);
     overflow-x: hidden;
-    padding-left: 35rem;
+    
 }
 
 section{
-    min-height: 55vh;
     padding:1rem;
 }
 
