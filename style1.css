@@ -475,6 +475,14 @@ header .navbar ul li a:hover{
 
 
 /*social media icons*/
+#social-media{
+   margin-left: 36%;
+}
+@media screen and (max-width: 972px) {
+    #social-media {
+         margin-left: 3rem;
+    }
+  }
 .sicons{
     align-items: center;
     background-color: transparent;
