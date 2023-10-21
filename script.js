@@ -55,8 +55,16 @@ function myFunction() {
   }
 }
 
-$(document).ready(function() {
-  $(".dropbtn-nav").click(function() {
-      $(".dropdown-content").slideToggle();
-  });
+// $(document).ready(function() {
+//   $(".dropbtn-nav").click(function() {
+//       $(".dropdown-content").slideToggle();
+//   });
+// });
+
+$(function () {
+	$(".dropbtn-nav").click(function (e) {
+		e.preventDefault();
+		$(".dropdown-content").slideToggle(500);
+		$(".fa-chevron-down").toggleClass("active");
+	});
 });

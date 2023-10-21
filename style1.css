@@ -683,4 +683,13 @@ header .navbar ul li a:hover{
 .dropdown-nav {
     margin-top: -20px;
     margin-left: 25px;
+    .fa-chevron-down {
+        transform: rotate(0deg);
+        transition: all 0.6s;
+
+        &.active {
+            transform: rotate(180deg);
+            color:#800080;
+        }
+    }
 }
