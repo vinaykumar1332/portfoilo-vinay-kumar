@@ -355,6 +355,17 @@
 .social-menu ul li:nth-child(4) a:hover{
     background-color: #000;
 }
+/*----drop-down in nav bar ------*/
+.dropbtn-nav{
+ background: transparent;
+& .fa-caret-down{
+    margin-left: -13px;
+    margin-top: -20px;
+}
+}
+.dropdown-content{
+    display: none;
+}
  
     </style>
     <div>
@@ -370,7 +381,18 @@
               <a href="index.html">Home</a>
               <a href="Skillbar.html">Skill bar</a>
               <a href="profilecard.html">Profile-card</a>
-              <a href="404.html">Test#</a>
+			  <a href="#">
+				<div class="dropdown-nav">
+					<button class="dropbtn-nav">Test-pages
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#">Test 1</a>
+						<a href="#">Test 2</a>
+						<a href="#">Test 3</a>
+					</div>
+				</div>
+			</a>
             </div>
           </div>
           <span style="font-size:35px;cursor:pointer;color: whitesmoke;padding: 9px;" onclick="openNav()">&#9776; </span>
@@ -447,5 +469,6 @@ const follow = () => {
 }
 </script>
 <script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 </html>

@@ -54,3 +54,9 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+$(document).ready(function() {
+  $(".dropbtn-nav").click(function() {
+      $(".dropdown-content").slideToggle();
+  });
+});
