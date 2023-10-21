@@ -39,7 +39,7 @@ html::-webkit-scrollbar-thumb{
 body{
     background-color: rgb(2, 2, 2);
     overflow-x: hidden;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 section{
