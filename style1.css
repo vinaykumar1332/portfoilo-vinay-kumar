@@ -676,10 +676,9 @@ header .navbar ul li a:hover{
 }
 .dropdown-content{
     display: none;
+   
 }
-.dropdown-content{
-    
-}
+
 .dropdown-nav {
     margin-top: -20px;
     margin-left: 25px;
@@ -690,6 +689,12 @@ header .navbar ul li a:hover{
         &.active {
             transform: rotate(180deg);
             color:#800080;
+            
         }
     }
 }
+
+
+
+
+
