@@ -664,4 +664,37 @@ header .navbar ul li a:hover{
     box-shadow: 3px 3px 3px 3px #888888;
 }
 
-/*----scroll top ------*/
+/*----drop-down in nav bar ------*/
+.dropbtn-nav{
+    background: transparent;
+    margin-bottom: -27px;
+    margin-top: -20px;
+& .fa-caret-down{
+    margin-left: -13px;
+    margin-top: -20px;
+}
+}
+.dropdown-content{
+    display: none;
+   
+}
+
+.dropdown-nav {
+    margin-top: -20px;
+    margin-left: 25px;
+    .fa-chevron-down {
+        transform: rotate(0deg);
+        transition: all 0.6s;
+
+        &.active {
+            transform: rotate(180deg);
+            color:#800080;
+            
+        }
+    }
+}
+
+
+
+
+

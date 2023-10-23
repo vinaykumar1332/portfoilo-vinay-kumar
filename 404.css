@@ -137,6 +137,7 @@
   .animated-text {
    
     color: whitesmoke;
+    font-family: "Lucida Console", "Courier New", monospace;
   }
 
   @keyframes blink {
