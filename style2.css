@@ -1,212 +1,285 @@
  /*  ------Nav------*/
  /* The Overlay (background) */
  .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 4px;
-  top: 0;
-  background-color:whitesmoke; /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.8s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
+   /* Height & width depends on how you want to reveal the overlay (see JS below) */
+   height: 100%;
+   width: 0;
+   position: fixed;
+   /* Stay in place */
+   z-index: 1;
+   /* Sit on top */
+   left: 4px;
+   top: 0;
+   background-color: whitesmoke;
+   /* Black fallback color */
+   background-color: rgba(0, 0, 0, 0.9);
+   /* Black w/opacity */
+   overflow-x: hidden;
+   /* Disable horizontal scroll */
+   transition: 0.8s;
+   /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+ }
 
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
+ /* Position the content inside the overlay */
+ .overlay-content {
+   position: relative;
+   top: 25%;
+   /* 25% from the top */
+   width: 100%;
+   /* 100% width */
+   text-align: center;
+   /* Centered text/links */
+   margin-top: 30px;
 
-/* The navigation links inside the overlay */
-.dropdown-content{
-  & .article-v4{
-    padding: 0px;
+   /* 30px top margin to avoid conflict with the close button on smaller screens */
+   & .fa-home {
+     margin-left: -23px;
+     padding: 13px;
+     padding: 0px;
+     color: none;
+     & :hover{
+      color:#800080;
+     }
+   }
+
+
+   .fa-home:before {
+     font-size: 25px;
+     margin-left: -25px;
+     color: #ccc;
+   }
+ }
+ @media only screen and (min-width: 1200px){
+  .overlay-content {
+    .fa-home:before {
+      font-size: 30px;
+      margin-left: -25px;
+      color: #ccc;
+    }
   }
-  & .dropdown-link {
-    padding: 4px;
-  }
-}
+ }
+ @media only screen and (max-width: 600px) {
+   .overlay-content {
+    & .fa-home {
+      margin-left: -23px;
+      padding: 13px;
+      padding: 0px;
+      color: none;
+      & :hover{
+        color:#800080;
+      }
+    }
+     & .fa-home:before {
+       font-size: 30px;
+     }
+   }
+ }
 
 
+ /* The navigation links inside the overlay */
+
+ .overlay a {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   padding: 8px;
+   text-decoration: none;
+   font-size: 36px;
+   color: white;
+   display: block;
+   /* Display block instead of inline */
+   transition: 0.3s;
+   /* Transition effects on hover (color) */
+ }
+
+ /* When you mouse over the navigation links, change their color */
+ .overlay a:hover,
+ .overlay a:focus {
+   color: purple;
+ }
+
+ /* Position the close button (top right corner) */
+ .overlay .closebtn {
+   position: absolute;
+   top: 20px;
+   right: 45px;
+   font-size: 60px;
+ }
+
+ /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+ @media screen and (max-height: 450px) {
+   .overlay a {
+     font-size: 20px
+   }
+
+   .overlay .closebtn {
+     font-size: 40px;
+     top: 15px;
+     right: 35px;
+   }
+ }
 
 
-.overlay a {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: white;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color:purple;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
+ /*---pre-loader----*/
+ body {
+   overflow: hidden;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
 
 
-/*---pre-loader----*/
-body {
-  overflow: hidden;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+ /* Preloader */
+
+ #preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: white;
+   /* change if the mask should have another color then white */
+   z-index: 99;
+   /* makes sure it stays on top */
+ }
+
+ #status {
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   left: 50%;
+   /* centers the loading animation horizontally one the screen */
+   top: 50%;
+   /* centers the loading animation vertically one the screen */
+   background-image: url(loader.gif);
+   /* path to your loading animation */
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: -100px 0 0 -100px;
+ }
+
+ /* Preloader */
+ #preloader {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   background-color: #fff;
+   /* Adjust as needed */
+   z-index: 9999;
+ }
+
+ #loader {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   margin: -30px;
+   transform: translate(-50%, -50%);
+   width: 60px;
+   /* Adjust as needed */
+   height: 60px;
+   /* Adjust as needed */
+   border: 9px solid #ccc;
+   /* Adjust as needed */
+   border-top-color: #800080;
+   /* Adjust as needed */
+   border-radius: 100%;
+   animation: spin 1000ms infinite linear;
+ }
+
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ #txt-load {
+   display: table;
+   margin: 0 auto;
+   padding-top: 395px;
+   font-size: 3rem;
+   font-weight: 400;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+
+ span.horizontal-shake {
+   animation: horizontal-shaking 2s infinite;
+ }
+
+ @keyframes horizontal-shaking {
+   0% {
+     transform: translateX(0)
+   }
+
+   25% {
+     transform: translateX(3px)
+   }
+
+   50% {
+     transform: translateX(-3px)
+   }
+
+   75% {
+     transform: translateX(3px)
+   }
+
+   100% {
+     transform: translateX(0)
+   }
+ }
+
+ /*----download button for reumse----*/
+ #downloadButton {
+   display: inline-block;
+   position: relative;
+   padding: 10px 20px;
+   background-color: #800080;
+   color: white;
+   text-decoration: none;
+   border-radius: 0px;
+   transition: background-color 1s;
+ }
+
+ #downloadButton .buttonText {
+   z-index: 1;
+ }
+
+ #downloadButton .buttonAnimation {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.4);
+   transition: width 0.3s;
+ }
+
+ #downloadButton:hover {
+   background-color: blue;
+
+ }
+
+ #downloadButton:hover .buttonAnimation {
+   width: 100%;
+ }
+
+ /*---scroll indicator---*/
 
 
-/* Preloader */
+ .progress-container {
+   width: 100%;
+   height: 5px;
+   background: #800080;
+   position: fixed;
+   z-index: 1;
+ }
 
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color:white;
-  /* change if the mask should have another color then white */
-  z-index: 99;
-  /* makes sure it stays on top */
-}
-
-#status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  /* centers the loading animation horizontally one the screen */
-  top: 50%;
-  /* centers the loading animation vertically one the screen */
-  background-image: url(loader.gif);
-  /* path to your loading animation */
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -100px 0 0 -100px;
-}
-
-/* Preloader */
-#preloader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  background-color: #fff; /* Adjust as needed */
-  z-index: 9999;
-}
-
-#loader {
-  position:fixed;
-  top: 50%;
-  left: 50%;
-  margin:-30px;
-  transform: translate(-50%, -50%);
-  width: 60px; /* Adjust as needed */
-  height: 60px; /* Adjust as needed */
-  border: 9px solid #ccc; /* Adjust as needed */
-  border-top-color: #800080; /* Adjust as needed */
-  border-radius: 100%;
-  animation: spin 1000ms infinite linear;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-#txt-load{
-  display: table;
-  margin: 0 auto;
-  padding-top: 395px;
-  font-size: 3rem;
-  font-weight: 400;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-span.horizontal-shake {
-  animation: horizontal-shaking 2s infinite;
-}
-
-@keyframes horizontal-shaking {
-  0% { transform: translateX(0) }
-  25% { transform: translateX(3px) }
-  50% { transform: translateX(-3px) }
-  75% { transform: translateX(3px) }
-  100% { transform: translateX(0) }
-}
-
-/*----download button for reumse----*/
-#downloadButton {
-  display: inline-block;
-  position: relative;
-  padding: 10px 20px;
-  background-color:#800080 ;
-  color: white;
-  text-decoration: none;
-  border-radius: 0px;
-  transition: background-color 1s;
-}
-
-#downloadButton .buttonText {
-  z-index: 1;
-}
-
-#downloadButton .buttonAnimation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
-  transition: width 0.3s;
-}
-
-#downloadButton:hover {
-  background-color: blue;
-  
-}
-
-#downloadButton:hover .buttonAnimation {
-  width: 100%;
-}
-
-/*---scroll indicator---*/
-
-
-.progress-container {
-  width: 100%;
-  height: 5px;
-  background:#800080;
-  position: fixed;
-  z-index: 1;
-}
-
-/* The progress bar (scroll indicator) */
-.progress-bar {
-  height: 5px;
-  background:blue;
-  width: 0%;
-}
+ /* The progress bar (scroll indicator) */
+ .progress-bar {
+   height: 5px;
+   background: blue;
+   width: 0%;
+ }
