@@ -51,13 +51,21 @@
  }
  @media only screen and (min-width: 1200px){
   .overlay-content {
-    .fa-home:before {
+     a{
+      & .dropdown-link {
+      font-size: 29px;
+    }
+  }
+    & .fa-home:before {
       font-size: 30px;
       margin-left: -25px;
       color: #ccc;
     }
   }
+
+  
  }
+
  @media only screen and (max-width: 600px) {
    .overlay-content {
     & .fa-home {
@@ -88,12 +96,17 @@
    /* Display block instead of inline */
    transition: 0.3s;
    /* Transition effects on hover (color) */
+   & .dropdown-link{
+     font-size: 20px;
+   }
  }
+
 
  /* When you mouse over the navigation links, change their color */
  .overlay a:hover,
  .overlay a:focus {
-   color: purple;
+   color: #800080;
+
  }
 
  /* Position the close button (top right corner) */
