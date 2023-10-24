@@ -733,15 +733,17 @@ header .navbar ul li a:hover {
 
 .dropdown-content {
     display: none;
-
+   & .dropdown-link{
+   }
     & .fa-hand-o-right {
         padding: 0px;
-        font-size: 14px;
+        font-size: 20px;
         margin-left: -17px;
 
-        & :hover {
-            color: #800080;
-        }
+    }
+    .fa-hand-o-right:hover,
+    .fa-hand-o-right:focus {
+        color: #800080;
     }
 
     & .fa-hand-o-right:before {
@@ -764,12 +766,21 @@ header .navbar ul li a:hover {
 
         }
     }
+    
 }
+
 
 @media screen and (max-height: 450px) {
     .overlay-content {
-      & .dropdown-nav {
+        a{
             & .dropdown-link {
+            font-size: 25px !important;
+            font-weight: lighter !important;
+            font-family: 'Nunito';
+        }
+    }
+      & .dropdown-nav {
+            &.dropdown-link {
                 font-size: 15px;
                  margin: -9px;
                  font-family: ui-serif;
