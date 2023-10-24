@@ -734,9 +734,6 @@ header .navbar ul li a:hover {
 .dropdown-content {
     display: none;
    & .dropdown-link{
-    font-size: 21px;
-    margin-left: -10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    }
     & .fa-hand-o-right {
         padding: 0px;
@@ -744,7 +741,8 @@ header .navbar ul li a:hover {
         margin-left: -17px;
 
     }
-    .fa-hand-o-right:hover,:focus {
+    .fa-hand-o-right:hover,
+    .fa-hand-o-right:focus {
         color: #800080;
     }
 
@@ -768,15 +766,9 @@ header .navbar ul li a:hover {
 
         }
     }
-     & .article-v4{
-        margin: -14px;
-    }
+    
 }
-a.dropdown-link {
-    font-size: 25px;
-    font-weight: lighter !important;
-    font-family: 'Nunito';
-}
+
 
 @media screen and (max-height: 450px) {
     .overlay-content {

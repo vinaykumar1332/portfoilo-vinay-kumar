@@ -32,7 +32,7 @@
    margin-top: 30px;
 
    /* 30px top margin to avoid conflict with the close button on smaller screens */
-   & .fa-home {
+   &.fa-home {
      margin-left: -23px;
      padding: 13px;
      padding: 0px;
