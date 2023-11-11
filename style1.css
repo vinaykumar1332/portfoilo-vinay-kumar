@@ -499,6 +499,14 @@ header .navbar ul li a:hover {
     justify-content: center;
     padding-right: 10px;
 }
+@media only screen and (max-width: 470px){
+    #social-media {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
 
 
 
