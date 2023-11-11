@@ -493,14 +493,13 @@ header .navbar ul li a:hover {
 
 /*social media icons*/
 #social-media {
-    margin-left: 36%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-right: 10px;
 }
 
-@media screen and (max-width: 972px) {
-    #social-media {
-        margin-left: 3rem;
-    }
-}
+
 
 .sicons {
     align-items: center;
@@ -580,7 +579,6 @@ header .navbar ul li a:hover {
     color: #800080;
     margin-left: 30px;
     font-size: 30px;
-    width: 10px;
     text-align: center;
     text-decoration: none;
 }
@@ -734,6 +732,7 @@ header .navbar ul li a:hover {
 .dropdown-content {
     display: none;
    & .dropdown-link{
+    font-size: 25px;
    }
     & .fa-hand-o-right {
         padding: 0px;
