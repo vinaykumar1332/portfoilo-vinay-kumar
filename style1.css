@@ -500,7 +500,13 @@ header .navbar ul li a:hover {
     padding-right: 10px;
 }
 
-
+@media only screen and (max-width: 470px) {
+    #social-media {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
 
 .sicons {
     align-items: center;
@@ -732,15 +738,18 @@ header .navbar ul li a:hover {
 
 .dropdown-content {
     display: none;
-   & .dropdown-link{
-    font-size: 25px;
-   }
+
+    & .dropdown-link {
+        font-size: 25px;
+    }
+
     & .fa-hand-o-right {
         padding: 0px;
         font-size: 20px;
         margin-left: -17px;
 
     }
+
     .fa-hand-o-right:hover,
     .fa-hand-o-right:focus {
         color: #800080;
@@ -766,25 +775,26 @@ header .navbar ul li a:hover {
 
         }
     }
-    
+
 }
 
 
 @media screen and (max-height: 450px) {
     .overlay-content {
-        a{
+        a {
             & .dropdown-link {
-            font-size: 25px !important;
-            font-weight: lighter !important;
-            font-family: 'Nunito';
+                font-size: 25px !important;
+                font-weight: lighter !important;
+                font-family: 'Nunito';
+            }
         }
-    }
-      & .dropdown-nav {
+
+        & .dropdown-nav {
             &.dropdown-link {
                 font-size: 15px;
-                 margin: -9px;
-                 font-family: ui-serif;
-                 font-weight: 500px;
+                margin: -9px;
+                font-family: ui-serif;
+                font-weight: 500px;
             }
         }
     }
