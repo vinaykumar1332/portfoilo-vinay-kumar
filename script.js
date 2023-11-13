@@ -92,3 +92,5 @@ const handleButtonClick = (e) => {
 buttons.forEach((btn) => {
   btn.addEventListener("click", handleButtonClick);
 });
+
+location.reload(true);
