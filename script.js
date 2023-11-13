@@ -1,4 +1,4 @@
-// When the user clicks on the button, scroll to the top of the document
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 20;
@@ -72,7 +72,7 @@ $(document).ready(function () {
 });
 
 
-const buttons = document.querySelectorAll(".card-buttons button");
+const button = document.querySelectorAll(".card-buttons button");
 const sections = document.querySelectorAll(".card-section");
 const card = document.querySelector(".card");
 
@@ -84,12 +84,19 @@ const handleButtonClick = (e) => {
     : card.classList.remove("is-active");
   card.setAttribute("data-state", targetSection);
   sections.forEach((s) => s.classList.remove("is-active"));
-  buttons.forEach((b) => b.classList.remove("is-active"));
+  button.forEach((b) => b.classList.remove("is-active"));
   e.target.classList.add("is-active");
   section.classList.add("is-active");
 };
 
-buttons.forEach((btn) => {
+button.forEach((btn) => {
   btn.addEventListener("click", handleButtonClick);
 });
+
+// Append a timestamp to the resource URL
+var script = document.createElement('script');
+script.src = 'script.js?' + new Date().getTime();
+console.log("Cache removed");
+alert(" ")
+document.head.appendChild(script);
 

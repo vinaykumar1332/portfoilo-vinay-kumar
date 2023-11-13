@@ -505,6 +505,7 @@ header .navbar ul li a:hover {
         display: flex;
         flex-wrap: wrap;
         padding-right: 40px;
+        justify-content: center;
     }
 }
 
