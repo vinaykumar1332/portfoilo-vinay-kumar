@@ -93,4 +93,3 @@ buttons.forEach((btn) => {
   btn.addEventListener("click", handleButtonClick);
 });
 
-location.reload(true);
